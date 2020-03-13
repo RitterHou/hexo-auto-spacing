@@ -1,6 +1,11 @@
-const pangu = require('pangu');
+const remark = require('remark');
+const pangu = require('remark-pangu');
 
-hexo.extend.filter.register('after_post_render', function (data) {
-    data.title = pangu.spacing(data.title);
-    data.content = pangu.spacing(data.content);
+hexo.extend.filter.register('before_post_render', function (data) {
+    remark().use(pangu).process(data.title, (err, file) => {
+        data.title = String(file);
+    });
+    remark().use(pangu).process(data.content, (err, file) => {
+        data.content = String(file);
+    });
 });

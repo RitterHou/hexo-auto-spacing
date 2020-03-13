@@ -1,6 +1,6 @@
 {
   "name": "hexo-auto-spacing",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Hexo auto spacing generator",
   "main": "index.js",
   "repository": {
@@ -17,6 +17,7 @@
   ],
   "license": "Apache License 2.0",
   "dependencies": {
-    "pangu": "^4.0.7"
+    "remark": "^11.0.2",
+    "remark-pangu": "^1.0.1"
   }
 }
