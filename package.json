@@ -1,0 +1,22 @@
+{
+  "name": "hexo-auto-spacing",
+  "version": "0.0.1",
+  "description": "Hexo auto spacing generator",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RitterHou/hexo-auto-spacing"
+  },
+  "bugs": {
+    "url": "https://github.com/RitterHou/hexo-auto-spacing/issues"
+  },
+  "keywords": [
+    "hexo",
+    "pangu.js",
+    "spacing"
+  ],
+  "license": "Apache License 2.0",
+  "dependencies": {
+    "pangu": "^4.0.7"
+  }
+}
